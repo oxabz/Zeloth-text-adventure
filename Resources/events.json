@@ -1,0 +1,165 @@
+[
+  {
+    "id": 0,
+    "situation" : {
+      "text": "Menu"
+    },
+    "actions": [
+      {
+        "command": "play",
+        "consequences": [
+          {
+            "type": "DisplayText",
+            "text": "The game will begin"
+          },
+          {
+            "type": "ChangeEvent",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "command": "setting",
+        "consequences": [
+          {
+            "type": "DisplayText",
+            "text": "Sorry the developer is to much of a procrastinator to make setting"
+          }
+        ]
+      },
+      {
+        "command": "test",
+        "consequences": [
+          {
+            "type": "If",
+            "cond": "var1>var2",
+            "consequences": [
+              {
+                "type": "DisplayText",
+                "text": "yolo"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "situation" : {
+      "text": "You are before the massive door of the dungeon of Naheulbeuk"
+    },
+    "actions": [
+      {
+        "command": "go home",
+        "consequences": [
+          {
+            "type": "DisplayText",
+            "text": "After some more thought you decide that the adventure is not worth the risk. You go home and live an happy life with a baker daughter. YOU LOSE"
+          },
+          {
+            "type": "Exit"
+          }
+        ]
+      },
+      {
+        "command": "kick-in the door",
+        "consequences": [
+          {
+            "type": "DisplayText",
+            "text": "You gather all your force and hit the door... But it doesn't move an inch.\n You in the other hand... You are thrown back on the ground. "
+          }
+        ]
+      },
+      {
+        "command": "knock on the door",
+        "consequences": [
+          {
+            "type": "DisplayText",
+            "text": "You knock on the door remembering that the dungeon is from the era where the hero would knock on the door so the dungeon master could have his \"mysterious\" door opening.\nThe door slowly open to reveal the grand entry hall.\n\"OH GOD DAMN IT! I will burn them to the ground\" you think as you discover the ads hanged between the beams"
+          },
+          {
+            "type": "ChangeEvent",
+            "id": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "situation" : {
+      "text": "You are now inside the massive hall of the dungeon. You see the doors of the inh and of the gift shop that opened during the era of \"freemium dungeon\"\nYou also see the stairs that lead you to the begin of the adventure"
+    },
+    "actions": [
+      {
+        "command": "go in the inh",
+        "consequences": [
+          {
+            "type": "DisplayText",
+            "text": "Maybe you could have something to drink before you begin the adventure "
+          },
+          {
+            "type": "ChangeEvent",
+            "id": 3
+          }
+        ]
+      },
+      {
+        "command": "go in the gift shop",
+        "consequences": [
+          {
+            "type": "DisplayText",
+            "text": "Nope! There is no fucking way you take part of this monetization scheme"
+          }
+        ]
+      },
+      {
+        "command": "climb the stairs",
+        "consequences": [
+          {
+            "type": "Exit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "situation" : {
+      "text": "You are now inside the massive hall of the dungeon. You see the doors of the inh and of the gift shop that opened during the era of \"freemium dungeon\"\nYou also see the stairs that lead you to the begin of the adventure"
+    },
+    "actions": [
+      {
+        "command": "go in the inh",
+        "consequences": [
+          {
+            "type": "DisplayText",
+            "text": "Maybe you could have something to drink before you begin the adventure "
+          },
+          {
+            "type": "ChangeEvent",
+            "id": 3
+          }
+        ]
+      },
+      {
+        "command": "go in the gift shop",
+        "consequences": [
+          {
+            "type": "DisplayText",
+            "text": "Nope! There is no fucking way you take part of this monetization scheme"
+          }
+        ]
+      },
+      {
+        "command": "climb the stairs",
+        "consequences": [
+          {
+            "type": "Exit"
+          }
+        ]
+      }
+    ]
+  }
+]
